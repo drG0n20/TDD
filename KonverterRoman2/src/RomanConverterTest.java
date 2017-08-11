@@ -5,10 +5,6 @@ public class RomanConverterTest {
     RomanConverter testObject = new RomanConverter();  //tworzymy obiekt testowy
     @Test
 
-//    public void nothing(){
-//        Assert.fail("Zkiepszczony test");
-//    }
-
     public void shouldReturnIwhen1isConverted(){
         assertConversion("I", 1);
     }
@@ -22,6 +18,18 @@ public class RomanConverterTest {
     public void shouldReturnIIIwhen3isConverted(){
         assertConversion("III", 3);
     }
+
+    @Test
+    public void shouldReturnIVwhen4isConverted(){
+        assertConversion("IV", 4);
+    }
+
+    @Test
+    public void shouldReturnVwhen5isConverted(){
+        assertConversion("V", 5);
+    }
+
+
 
     /**
      * FUNKCJA POMOCNICZA
