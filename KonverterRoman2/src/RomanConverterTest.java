@@ -14,8 +14,9 @@ public class RomanConverterTest {
     }
 
     @Test
-    public void shouldReturnIIwhen2isConverted(){
+    public void shouldReturnIIwhen2isConverted() {
         assertConversion("II", 2);
+    }
 
     @Test
     public void shouldReturnIIIwhen3isConverted(){
