@@ -1,14 +1,15 @@
 public class RomanConverter {
-    private String[] RomanNumber = {"I", "IV", "V", "IX", "X"};
+    private String[] romanNumbers = {"I", "IV", "V", "IX", "X"};
     private int[] romanValues = {1, 4, 5, 9, 10};
 
     public String convert(int number) {
         String result = "";
 
-        for (int romanIndex = RomanNumber.length - 1; number > 0; romanIndex--) { //-- bo idziemy od tylu
-           if (ro)
-            result += RomanNumber[romanIndex]; //doklejamy sobie znaczek
-            number -= romanValues[romanIndex];
+        for (int romanIndex = romanNumbers.length - 1; number > 0; romanIndex--) { //-- bo idziemy od tylu
+            if (romanValues[romanIndex] <= number) {
+                result += romanNumbers[romanIndex]; //doklejamy sobie znaczek
+                number -= romanValues[romanIndex];
+            }
         }
         return result;
 //        if (number >= 10) {
