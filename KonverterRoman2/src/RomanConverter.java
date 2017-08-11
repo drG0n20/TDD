@@ -4,30 +4,20 @@ public class RomanConverter {
 
     public String convert(int number) {
         String result = "";
-
-        for (int romanIndex = romanNumbers.length - 1; number > 0; romanIndex--) { //-- bo idziemy od tylu
-            for (; romanValues[romanIndex] <= number; ) {
-                result += romanNumbers[romanIndex]; //doklejamy sobie znaczek
+        int romanIndex = romanNumbers.length - 1;
+        while (number > 0) {
+            while (romanValues[romanIndex] <= number) {
+                result += romanNumbers[romanIndex];
                 number -= romanValues[romanIndex];
             }
-
+            romanIndex--;
         }
-        return result;
-//        if (number >= 10) {
-//            for (; number >= 10; ) {
-//                result += "X";
-//                number -= 10;
+//        for (int romanIndex = romanNumbers.length - 1; number > 0; romanIndex--) { //-- bo idziemy od tylu
+//            for (; romanValues[romanIndex] <= number; ) {
+//                result += romanNumbers[romanIndex]; //doklejamy sobie znaczek
+//                number -= romanValues[romanIndex];
 //            }
 //        }
-//        if (number == 9) return result += "IX";
-//        if (number == 4) return result += "IV";
-//        if (number >= 5) {
-//            result += "V"; // +zeby zadzialalo z 15
-//            number -= 5;
-//        }
-//        for (int i = 0; i < number; i++) {
-//            result += "I";
-//        }
-//        return result;
+        return result;
     }
 }
