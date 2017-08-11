@@ -13,10 +13,15 @@ public class RomanConverterTest {
 
     @Parameters
     public static Object[][] data(){
-        return new Object[][] {{"I", 1}};
+        return new Object[][] {
+                {"I", 1},
+                {"II", 2},
+                {"III", 3},
+                {"IV", 5}
+        };
     }
 
-    public RomanConverterTest(String expextedOutput, int number) {
+    public RomanConverterTest(String expextedOutput, int number) { //elementy musza sie zgadzac parametra wyzej
 
         this.expextedOutput = expextedOutput;
         this.number = number;
@@ -25,12 +30,6 @@ public class RomanConverterTest {
     @Test
     public void assertConvertedNumbers(){
         assertConversion(expextedOutput, number);
-    }
-
-    @Test
-
-    public void shouldReturnIwhen1isConverted(){
-        assertConversion("I", 1);
     }
 
     @Test
