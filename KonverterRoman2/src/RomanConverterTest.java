@@ -11,13 +11,18 @@ public class RomanConverterTest {
     private final int number;
     RomanConverter testObject = new RomanConverter();  //tworzymy obiekt testowy
 
-    @Parameters
-    public static Object[][] data(){
-        return new Object[][] {
+    @Parameters(name = "{1} -> {0}")
+    public static Object[][] data() {
+        return new Object[][]{
                 {"I", 1},
                 {"II", 2},
                 {"III", 3},
-                {"IV", 5}
+                {"IV", 4},
+                {"V", 5},
+                {"VI", 6},
+                {"VII", 7},
+                {"VIII", 8},
+                {"IX", 9},
         };
     }
 
@@ -28,46 +33,9 @@ public class RomanConverterTest {
     }
 
     @Test
-    public void assertConvertedNumbers(){
+    public void shouldConvertNumbertoRoman() {
         assertConversion(expextedOutput, number);
     }
-
-    @Test
-    public void shouldReturnIIwhen2isConverted() {
-        assertConversion("II", 2);
-    }
-
-    @Test
-    public void shouldReturnIIIwhen3isConverted(){
-        assertConversion("III", 3);
-    }
-
-    @Test
-    public void shouldReturnIVwhen4isConverted(){
-        assertConversion("IV", 4);
-    }
-
-    @Test
-    public void shouldReturnVwhen5isConverted(){
-        assertConversion("V", 5);
-    }
-
-    @Test
-    public void shouldReturnVIwhen6isConverted(){
-        assertConversion("VI", 6);
-    }
-
-    @Test
-    public void shouldReturnVIIwhen7isConverted(){
-        assertConversion("VII", 7);
-    }
-
-    @Test
-    public void shouldReturnVIIIwhen8isConverted(){
-        assertConversion("VIII", 8);
-    }
-
-
 
     //FUNKCJA POMOCNICZA
 
