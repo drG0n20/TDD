@@ -8,18 +8,23 @@ import org.junit.runners.Parameterized.Parameters;
 
 public class RomanConverterTest {
     private final String expextedOutput;
-    private final int input;
+    private final int number;
     RomanConverter testObject = new RomanConverter();  //tworzymy obiekt testowy
 
     @Parameters
-    public Object[][] data(){
+    public static Object[][] data(){
         return new Object[][] {{"I", 1}};
     }
 
-    RomanConverterTest(String expextedOutput, int input) {
+    public RomanConverterTest(String expextedOutput, int number) {
 
         this.expextedOutput = expextedOutput;
-        this.input = input;
+        this.number = number;
+    }
+
+    @Test
+    public void assertConvertedNumbers(){
+        assertConversion(expextedOutput, number);
     }
 
     @Test
