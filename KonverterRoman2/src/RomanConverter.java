@@ -12,12 +12,6 @@ public class RomanConverter {
             }
             romanIndex--;
         }
-//        for (int romanIndex = romanNumbers.length - 1; number > 0; romanIndex--) { //-- bo idziemy od tylu
-//            for (; romanValues[romanIndex] <= number; ) {
-//                result += romanNumbers[romanIndex]; //doklejamy sobie znaczek
-//                number -= romanValues[romanIndex];
-//            }
-//        }
         return result;
     }
 }
