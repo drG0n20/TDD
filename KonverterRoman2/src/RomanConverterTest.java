@@ -7,11 +7,19 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 
 public class RomanConverterTest {
+    private final String expextedOutput;
+    private final int input;
     RomanConverter testObject = new RomanConverter();  //tworzymy obiekt testowy
 
     @Parameters
     public Object[][] data(){
         return new Object[][] {{"I", 1}};
+    }
+
+    RomanConverterTest(String expextedOutput, int input) {
+
+        this.expextedOutput = expextedOutput;
+        this.input = input;
     }
 
     @Test
