@@ -43,3 +43,5 @@ crashlytics-build.properties
 fabric.properties
 .idea/inspectionProfiles/
 
+.idea/TDD.iml
+.idea/modules.xml
