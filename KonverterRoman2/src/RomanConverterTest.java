@@ -10,16 +10,24 @@ public class RomanConverterTest {
 //    }
 
     public void shouldReturnIwhen1isConverted(){
-        Assert.assertEquals("I", testObject.convert(1));
+        assertConversion("I", 1);
     }
 
     @Test
     public void shouldReturnIIwhen2isConverted(){
-        Assert.assertEquals("II", testObject.convert(2));
-    }
+        assertConversion("II", 2);
 
     @Test
     public void shouldReturnIIIwhen3isConverted(){
-        Assert.assertEquals("III", testObject.convert(3));
+        assertConversion("III", 3);
+    }
+
+    /**
+     * FUNKCJA POMOCNICZA
+     *
+     */
+
+    public void assertConversion(String expected, int number) {
+        Assert.assertEquals(expected, testObject.convert(number));
     }
 }
