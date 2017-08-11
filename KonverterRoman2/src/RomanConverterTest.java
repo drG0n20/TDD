@@ -29,12 +29,19 @@ public class RomanConverterTest {
         assertConversion("V", 5);
     }
 
+    @Test
+    public void shouldReturnVIwhen6isConverted(){
+        assertConversion("VI", 6);
+    }
+
+    @Test
+    public void shouldReturnVIIwhen7isConverted(){
+        assertConversion("VII", 7);
+    }
 
 
-    /**
-     * FUNKCJA POMOCNICZA
-     *
-     */
+
+    //FUNKCJA POMOCNICZA
 
     public void assertConversion(String expected, int number) {
         Assert.assertEquals(expected, testObject.convert(number));
