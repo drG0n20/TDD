@@ -23,6 +23,7 @@ public class RomanConverterTest {
                 {"VII", 7},
                 {"VIII", 8},
                 {"IX", 9},
+                {"X", 10},
         };
     }
 

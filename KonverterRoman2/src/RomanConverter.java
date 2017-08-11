@@ -3,6 +3,7 @@ public class RomanConverter {
         String result = "";
         if (number == 4) return "IV";
         if (number == 9) return "IX";
+        if (number == 10) return "X";
         if (number >= 5) {
             result = "V";
             number -= 5;
