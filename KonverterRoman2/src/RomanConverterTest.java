@@ -9,7 +9,7 @@ public class RomanConverterTest {
 //    }
 
     public void nothing(){
-        RomanConverter testObject = null;  //tworzymy obiekt testowy
+        RomanConverter testObject = new RomanConverter();  //tworzymy obiekt testowy
         Assert.assertEquals("I", testObject.convert(1));
     }
 }
