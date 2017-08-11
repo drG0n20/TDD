@@ -48,3 +48,4 @@ BubbleSortTest/.idea/inspectionProfiles/
 BubbleSortTest/out/
 Calculator/.idea/inspectionProfiles/
 FizzBuzz/.idea/inspectionProfiles/
+.gitignore
