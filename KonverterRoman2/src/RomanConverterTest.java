@@ -1,8 +1,19 @@
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
 
 public class RomanConverterTest {
     RomanConverter testObject = new RomanConverter();  //tworzymy obiekt testowy
+
+    @Parameters
+    public Object[][] data(){
+        return new Object[][] {{"I", 1}};
+    }
+
     @Test
 
     public void shouldReturnIwhen1isConverted(){
@@ -37,6 +48,11 @@ public class RomanConverterTest {
     @Test
     public void shouldReturnVIIwhen7isConverted(){
         assertConversion("VII", 7);
+    }
+
+    @Test
+    public void shouldReturnVIIIwhen8isConverted(){
+        assertConversion("VIII", 8);
     }
 
 
