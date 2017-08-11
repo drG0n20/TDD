@@ -43,3 +43,8 @@ crashlytics-build.properties
 fabric.properties
 .idea/inspectionProfiles/
 
+.idea/
+BubbleSortTest/.idea/inspectionProfiles/
+BubbleSortTest/out/
+Calculator/.idea/inspectionProfiles/
+FizzBuzz/.idea/inspectionProfiles/
