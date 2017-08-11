@@ -1,6 +1,6 @@
 public class RomanConverter {
-    private String[] romanNumbers = {"I", "IV", "V", "IX", "X", "XL"};
-    private int[] romanValues = {1, 4, 5, 9, 10, 40};
+    private String[] romanNumbers = {"I", "IV", "V", "IX", "X", "XL", "L"};
+    private int[] romanValues = {1, 4, 5, 9, 10, 40, 50};
 
     public String convert(int number) {
         String result = "";
