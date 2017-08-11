@@ -6,10 +6,11 @@ public class RomanConverter {
         String result = "";
 
         for (int romanIndex = romanNumbers.length - 1; number > 0; romanIndex--) { //-- bo idziemy od tylu
-            if (romanValues[romanIndex] <= number) {
+            for (; romanValues[romanIndex] <= number; ) {
                 result += romanNumbers[romanIndex]; //doklejamy sobie znaczek
                 number -= romanValues[romanIndex];
             }
+
         }
         return result;
 //        if (number >= 10) {
