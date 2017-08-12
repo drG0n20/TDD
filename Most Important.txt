@@ -1,0 +1,29 @@
+Rule #1: Write NO production code, except to pass a failing test.
+Rule #2: Write only ENOUGH of a test to demostrate a failure
+Rule #3: Write only ENOUGH production code to pass a test
+
+Zasada #1: Nie pisz żadnego kodu produkcyjnego, za wyjątkiem tego, który jest wymagany, żeby naprawić czerwony test
+Zasada #2: Napisz tylko wystarczająco testu, aby zademonstrować porażkę
+Zasada #3: Napisz tylko tyle kodu produkcyjnego, żeby przechodził test	
+
+Red -> Green -> Refactor
+
+Jak skonfigurować @Parametrized tests
+https://www.mkyong.com/unittest/junit-4-tutorial-6-parameterized-test
+
+Zadanie domowe: Napiszcie konwerter liczb rzymskich w drugą stronę (nie zaglądając w moje rozwiązanie na github) ;)
+
+Dla osób, które chcą zobaczyć jeszcze trochę coding dojo solutions:
+http://codingdojo.org/
+https://www.youtube.com/channel/UCLQzbad3iVB_Zja5ekbAxkw
+
+Książki warte polecenia w temacie:
+http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm
+http://helion.pl/ksiazki/tdd-sztuka-tworzenia-dobrego-kodu-kent-beck,tddszt.htm
+
+Dla ciekawskich:
+Moja prezentacja zawierająca przydatne terminy, które pojawiają się w wyżej wymienionych książkach:
+https://maciejtrojniarz.github.io/SoftwareDeveloper2_0
+
+Świetna książka opowiadająca o profesjonaliźmie w byciu deweloperem:
+http://helion.pl/ksiazki/software-craftsman-profesjonalizm-czysty-kod-i-techniczna-perfekcja-sandro-mancuso,prorze.htm
