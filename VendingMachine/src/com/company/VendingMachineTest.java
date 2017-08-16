@@ -3,14 +3,23 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class VendingMachineTest {
-
-    public static void main(String[] args) {
+        VendingMachine vendingMachine = new VendingMachine();
 
         @Test
-         public void WhenChoosingProductWithoutMoneyNothingHappens{
-            VendingMachine vendingMachine = new VendingMachine();
+        public void whenChoosingProductWithoutMoneyNothingHappens(){
             String result = vendingMachine.execute("A");
             Assert.assertEquals("",result);
         }
-    }
+
+        @Test
+        public void whenInsertNotEnoughMoneyAndPressProductGiveMoneyBack(){
+            String result = vendingMachine.execute("DA");
+            Assert.assertEquals("D",result);
+        }
+
+        @Test
+        public void whenInsertQarterIwantQarterBack(){
+            String result = vendingMachine.execute("QA");
+            Assert.assertEquals("Q",result);
+        }
 }
