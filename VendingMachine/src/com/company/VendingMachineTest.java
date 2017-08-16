@@ -2,6 +2,11 @@ package com.company;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * VendingMachine
+ *
+ */
+
 public class VendingMachineTest {
         VendingMachine vendingMachine = new VendingMachine();
 
