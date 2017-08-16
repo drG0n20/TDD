@@ -1,0 +1,17 @@
+Vending Machine:
+
+-Interface
+    -execute(String input)
+
+-Kasa
+    -insertDolar
+    -insertQuarter
+    -insertNickel
+    -insertDime
+    -zwrocMonety()
+    -wydajReszte(kwota)
+    -wlozonoConajmniej(float kwota)
+
+-Produkty
+    -ileKosztuje(produkt)
+    -dajprodukt(produkt)
